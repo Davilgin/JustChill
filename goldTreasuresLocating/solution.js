@@ -1,44 +1,20 @@
 
-const goldStore = function (x, y) {
+const solution = function (x, y) {
 
-    if (y < 1 || y > 100000 && x < 1 || x > 100000) {
-        console.log('Error, out of number')
+    let goldId
+
+    if(x > 100000 || x < 0) {
         return false;
+    } else if (y > 100000 || y < 0) {
+        return false;
+    } else {
+        goldId = ((x + y - 2) * (x + y - 1) / 2 + y).toString();
     }
-    
-    const outPut = [];
-    const storeArray = [];
-    
-    let existColumn = 1;
-    let column = 1;
-    let row = 1;
-    let id = 1;
 
-    for (i = 0; i < 1000000; i++) {
-
-        let location = `${column + ', ' + row}`;
-        storeArray.push({location, id});
-
-        if (row === y && column === x) {
-            outPut.push(`${id}`);
-        }
-
-        if (!(column === 1)) {
-            row++
-            column--
-        } else {
-        existColumn++
-        row = 1
-        column = existColumn;
-        }
-
-    id++
-    
-    }
-    console.log(outPut);
+    return goldId;
 }
 
-goldStore(2, 3);
-goldStore(10, 5);
-goldStore(100, 58);
-goldStore(1000001, 29);
+solution(2, 3);
+solution(10, 5);
+
+module.exports = solution;
