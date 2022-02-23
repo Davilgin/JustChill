@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Davil\\.vscode\\Projects\\Steps\\Solidity\\testHardhat\\contracts\\DavidTestToken.sol": {
+      "lastModificationDate": 1645621822292,
+      "contentHash": "dd4b1c2ac14480633d64fda26e77d77d",
+      "sourceName": "contracts/DavidTestToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "DavidTestToken",
+        "IERC20"
+      ]
+    }
+  }
+}
